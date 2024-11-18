@@ -7,7 +7,7 @@ public class Transaction {
     public Date date;
     public PaymentMethod paymentMethod;
 
-    public void setArtwork(Artwork artwork, Collector buyer, int quantitty) {
+    public void setArtwork(Artwork artwork, Collector buyer, int quantitty, PaymentMethod paymentMethod) {
         this.artwork = artwork;
         this.buyer = buyer;
         this.quantitty = quantitty;
@@ -20,17 +20,7 @@ public class Transaction {
         System.out.println("Buyer: " + buyer.nama);
         System.out.println("Quantity: " + quantitty);
         System.out.println("Date: " + date);
+        System.out.println("Payment method: " + paymentMethod);
     }
 
-    public void payViaBank() {
-        System.out.println("Processing payment via bank...");
-    }
-
-    public void payViaCash() {
-        System.out.println("Processing payment via cash...");
-    }
-
-    public void payViaEWallet() {
-        System.out.println("Processing payment via e-wallet...");
-    }
 }
