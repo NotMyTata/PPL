@@ -3,7 +3,8 @@ public class Artist {
     public boolean gender;
     public String notelp;
 
-    public Artist(String nama, boolean gender, String notelp) {
+    public Artist(String nama, 
+    boolean gender, String notelp) {
         this.nama = nama;
         this.gender = gender;
         this.notelp = notelp;
