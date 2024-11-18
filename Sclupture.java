@@ -1,9 +1,9 @@
-public class Painting extends Artwork {
-    public String medium;
+public class Sclupture extends Artwork{
+    public String material;
 
-    public Painting(String title, Artist artist, int tahun, double harga, String medium) {
+    public Sclupture(String title, Artist artist, int tahun, double harga, String material) {
         super(title, artist, tahun, harga); 
-        this.medium = medium;
+        this.material = material;
     }
 
     public void displayInfo() {
@@ -11,7 +11,7 @@ public class Painting extends Artwork {
         System.out.println("Title: " + title);
         System.out.println("Artist: " + artist.nama);
         System.out.println("Year: " + tahun);
-        System.out.println("Medium: " + medium);
+        System.out.println("Material: " + material);
         System.out.println("Price: " + harga);
     }
 
